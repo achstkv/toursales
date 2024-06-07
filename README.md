@@ -24,8 +24,8 @@ cd backend
 
 ## Запуск проекта
 
-.\venv\Scripts\activate
-flask run
+- .\venv\Scripts\activate
+- flask run
 
 ## Контрибьюторы
 
