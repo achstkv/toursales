@@ -1,0 +1,35 @@
+<!-- templates/show_tour.html -->
+{% extends "base.html" %}
+
+{% block title %}Детали тура{% endblock %}
+
+{% block content %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="alert alert-dismissible fade show" role="alert">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    <h1 class="title">Детали тура</h1>
+    <div class="card mb-4 shadow-sm">
+        <img src="{{ tour.image }}" class="card-img-top" alt="Изображение тура">
+        <div class="card-body">
+            <p class="card-text">{{ tour.description }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="{{ url_for('form_tour', tour_id=tour.id) }}" class="btn btn-sm btn-outline-secondary">Забронировать этот тур</a>
+                </div>
+                <small class="text-muted">${{ tour.price }}</small>
+            </div>
+        </div>
+    </div>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Вернуться на главную</a>
+{% endblock %}

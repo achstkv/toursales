@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "/static/images/Cove-port-coast-Black-Sea-Turkey-Amasra.webp",
+        "description": "Турция, 7 дней, 8 ночей",
+        "price": 500.0
+    },
+    {
+        "id": 2,
+        "image": "/static/images/caption.jpg",
+        "description": "Мальдивы, 10 дней, 10 ночей",
+        "price": 1000.0
+    },
+    {
+        "id": 3,
+        "image": "/static/images/gretsiya-oktyabre-otdyh-pogoda-photo1_904546334.jpg",
+        "description": "Греция, 7 дней, 7 ночей",
+        "price": 750.0
+    }
+]

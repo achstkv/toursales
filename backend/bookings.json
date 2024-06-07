@@ -1,0 +1,8 @@
+[
+    {
+        "tour_id": 1,
+        "full_name": "John Doe",
+        "tour_dates": "2024-06-15 to 2024-06-20",
+        "email": "john.doe@example.com"
+    }
+]
