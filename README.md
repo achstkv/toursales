@@ -17,8 +17,8 @@
 git clone https://github.com/achstkv/toursales.git
 
 2. Перейдите в директорию проекта:
-cd toursales
-cd backend
+- cd toursales
+- cd backend
 
 3. Выполните в терминале 'pip install -r requirements.txt'
 
